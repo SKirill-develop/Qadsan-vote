@@ -1,0 +1,16 @@
+.logo {
+  height: 50px;
+}
+
+.menu {
+  justify-content: flex-end;
+}
+
+.menu_item {
+  margin:10px;
+  cursor: pointer;
+}
+
+a {
+  all:unset;
+}
