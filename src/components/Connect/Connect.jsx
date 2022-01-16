@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button } from 'antd';
 import albedo from "@albedo-link/intent";
 
 const Connect = () => {
@@ -14,7 +14,7 @@ const Connect = () => {
 
   return (
     <div>
-      <Button variant="light" onClick={connectFromAlbedo}>
+      <Button type="primary" onClick={connectFromAlbedo}>
         Connect from Albedo
       </Button>
       {stellarWallet && <p>Your wallet: {stellarWallet}</p>}

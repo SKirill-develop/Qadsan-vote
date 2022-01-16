@@ -8,6 +8,7 @@ class MainForm extends React.Component {
     this.state = {
       StellarWallet: "",
       AmountDay: "",
+      SuccessSend: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -24,7 +25,15 @@ class MainForm extends React.Component {
       body: JSON.stringify(this.state),
     })
       .then((response) => response.text())
-      .then((response) => console.log(response));
+      .then((response) => {
+        console.log(response);
+        if (response === "success") {
+          this.setState({ 
+            StellarWallet: "",
+            AmountDay: "",
+            SuccessSend: true, })
+        }
+      });
   }
 
   handleInputChange(event) {
@@ -66,6 +75,7 @@ class MainForm extends React.Component {
               Submit
             </Button>
           </Form>
+          {this.state.SuccessSend && <p>Sucessfully sent</p>}
         </div>
       </div>
     );

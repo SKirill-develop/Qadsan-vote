@@ -5,9 +5,9 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 const Header = () => (
   <header>
-    <Navbar expand="lg" variant="light" bg="light">
+    <Navbar expand="lg" variant="light" >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           <img src={Logo} alt="Logo" className={headerStyles.logo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
