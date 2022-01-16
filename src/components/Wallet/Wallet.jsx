@@ -1,18 +1,20 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from 'antd';
 import Connect from "../Connect/Connect";
+import InputWallet from "../Input-Wallet/Input-Wallet"
 
 const Wallet = () => {
   return (
-    <Container>
+    <>
       <Row>
-        <Col></Col>
-        <Col>
+        <Col span={5}></Col>
+        <Col span={15}>
           <h1>Wallet</h1>
+          <Connect />
+          <InputWallet />
         </Col>
-        <Col></Col>
+        <Col span={3}></Col>
       </Row>
-      <Connect />
-    </Container>
+    </>
   );
 };
 
