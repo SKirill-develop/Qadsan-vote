@@ -5,13 +5,10 @@ const Wallet = () => {
   return (
     <>
       <Row>
-        <Col span={5}></Col>
-        <Col span={15}>
+        <Col flex="auto">
           <h1>Wallet</h1>
-          
           <InputWallet />
         </Col>
-        <Col span={3}></Col>
       </Row>
     </>
   );
